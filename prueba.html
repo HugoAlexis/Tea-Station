@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    :root {
+      --clr-primary: #d35005;
+      --clr-primary-purple: #38023b;
+    }
+
+    .content-divider {
+  height: 5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary-purple),
+    var(--clr-primary),
+    var(--clr-primary-purple)
+  );
+  animation: divanima;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+  @-webkit-keyframes divanima {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes divanima {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes divanima {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes divanima {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+  </style>
+</head>
+<body>
+  <!--Divider-->
+  <div class="content-divider">
+  </div>
+</body>
+</html>
